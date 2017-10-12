@@ -1,0 +1,2 @@
+D:\Autoestudio\NodeVisualStudio\FullStack20171210\RegistroPersonal\RegistroPersonal\obj\Debug\RegistroPersonal.njsprojResolveAssemblyReference.cache
+D:\Autoestudio\NodeVisualStudio\FullStack20171210\RegistroPersonal\RegistroPersonal\bin\Microsoft.NodejsTools.WebRole.dll
