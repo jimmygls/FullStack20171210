@@ -1,20 +1,21 @@
 ﻿<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{Respuesta}}</title>
+    <title>{{respuesta}}</title>
     <script type="text/javascript" src="node_modules/angular/angular.js"></script>
 </head>
-<body ng-app>
-    <div class="container">
-        Entiendes el contenido de este libro?
-        <input type="checkbox" ng-model="respuesta">
-        <div ng-hide="respuesta">
-            <h2>Me esforzare más!</h2>
-        </div>
-        <div ng-show="respuesta">
-            <h2>Felicidades!</h2>
-        </div>
+<body ng-app="prueba">
+    <script>
+      var app= angular.module('prueba', []);
+        app.controller("miCtrl",miCtrl);
+
+        function miCtrl($scope) {
+                $scope.mensaje = 'controlando mensaje';
+            }
+    </script>
+    <div  class="container" ng-controller="miCtrl">
+       <h>aqui aparece algo </h>
+        <h1 ng-bind="mensaje"></h1>
     </div>
-   
 </body>
 </html>

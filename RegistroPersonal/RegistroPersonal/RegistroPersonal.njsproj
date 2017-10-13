@@ -44,6 +44,7 @@
     <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Controller\" />
     <Folder Include="routes\" />
     <Folder Include="Scripts\" />
     <Folder Include="Scripts\typings\" />
