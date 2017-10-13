@@ -1,12 +1,20 @@
-﻿<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="UTF-8">
+    <title>{{Respuesta}}</title>
+    <script type="text/javascript" src="node_modules/angular/angular.js"></script>
 </head>
-<body>
-    inicio
-    <a href="Views/Index.html">ver</a>
+<body ng-app>
+    <div class="container">
+        Entiendes el contenido de este libro?
+        <input type="checkbox" ng-model="respuesta">
+        <div ng-hide="respuesta">
+            <h2>Me esforzare más!</h2>
+        </div>
+        <div ng-show="respuesta">
+            <h2>Felicidades!</h2>
+        </div>
+    </div>
+   
 </body>
 </html>
